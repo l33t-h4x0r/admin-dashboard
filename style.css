@@ -1,0 +1,189 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    font-family: sans-serif;
+}
+.verti-aligned {
+    display: flex;
+    align-items: center;
+}
+
+
+/****** SIDEBAR *******/
+.sidebar {
+    padding: 20px;
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: rgb(0, 162, 255);
+}
+.sidebar-header {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+#sidebar-img {
+    height: 25px;
+    margin-right: 10px;
+}
+.sidebar-nav {
+    font-size: 14px;
+    font-weight: bold;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+}
+.sidebar-nav div {
+    margin: 0px;
+    padding: 0px;
+}
+.sidebar img {
+    margin-right: 15px;
+    height: 15px;
+}
+a {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+/****** HEADER ******/
+.header {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 20px;
+    padding: 0px 20px;
+    box-shadow: 0px 3px 7px rgb(175, 182, 193);
+    position: relative;
+    z-index: 2;
+}
+#searchbar {
+    background-color: rgb(208, 216, 229);
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    margin-left: 10px;
+}
+.notifs {
+    gap: 15px;
+    justify-content: right;
+    font-weight: bold;
+    font-size: 14px;
+}
+.handle {
+    font-weight: bold;
+}
+.header-btns {
+    gap: 15px;
+    justify-content: right;
+}
+.header-btns button {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: dodgerblue;
+    padding: 5px 15px;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+/****** CONTENT *******/
+.content {
+    background-color: rgb(208, 216, 229);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 12px;
+    row-gap: 15px;
+}
+#cards-section {
+    margin-right: 15px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+.card {
+    background-color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    color:gray;
+    padding: 15px 20px;
+    box-shadow: 0px 3px 7px rgb(175, 182, 193);
+}
+.cards .card {
+     border-left: rgb(255, 196, 0) 5px solid;   
+}
+.card-buttons {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 5px;
+}
+h6 {
+    font-size: 12px;
+    color: black;
+    margin: 0px;
+}
+p {
+    margin: 0px;
+}
+.announcement p {
+    font-size: 10px;
+}
+.announcement h6 {
+    font-size: 10px;
+}
+.announcement {
+    border-bottom: rgba(128, 128, 128, 0.314) 1px solid;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
+.announcement:last-child {
+    border: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+#announcements-section {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+#trending-section {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.content-title {
+    font-weight: bold;
+    font-size: 14;
+    margin: 10px 0px;
+}
+.trend img {
+    height: 35px;
+}
+.trend h5 {
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    font-weight: bold;
+    font-size: 10px;
+}
+.trend h6 {
+    margin: 0px;
+    padding: 0px;
+    color: rgb(139, 139, 139);
+    font-size: 10px;
+}
+
+.trending-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 5px;
+}
